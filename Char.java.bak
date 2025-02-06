@@ -1,0 +1,12 @@
+import java.util.Scanner;
+class  Char
+{
+	public static void main(String[] args) 
+	{
+		Scannner sc = new Scanner(System.in);
+		System.out.println ("ENTER");
+		char a = sc.next().charAt();
+		String s = ((ch>='A'&& ch<='Z')||(ch>='a'&& ch<='z')?((ch>='A'&& ch<='Z')?(ch+"UPPERCASE"):("LOWERCASE")):((ch>='0'&& ch<='9')?("DIGIT"):("SPECIAL CHARCTER")));
+		System.out.println (s);
+	}
+}

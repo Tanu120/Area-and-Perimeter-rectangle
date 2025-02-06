@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+class EVM {
+    public static void main(String[] args) {
+        System.out.println("     WELCOME     ");
+        int bjp = 0, cn = 0, nota = 0;
+        
+        System.out.print("POPULATION: ");
+        Scanner sc = new Scanner(System.in);
+        int p = sc.nextInt();
+        
+        for (int i = 1; i <= p; i++) {
+            System.out.println();
+            System.out.println("**** LIST ****");
+            System.out.println();
+            System.out.println("1: BJP ");
+            System.out.println("2: CONGRESS");
+            System.out.println("3: NOTA");
+            System.out.println();
+            System.out.print("ENTER: ");
+            int opt = sc.nextInt();
+
+            if (opt >= 1 && opt <= 3) {
+                if (opt == 1)
+                    bjp++;
+                else if (opt == 2)
+                    cn++;
+                else if (opt == 3)
+                    nota++;
+            } else {
+                System.out.println("INVALID INPUT. Please try again.");
+                i--; // Decrement counter to reattempt input
+            }
+        }
+        
+        // Display final results
+        System.out.println("\n**** RESULTS ****");
+        System.out.println("BJP Votes: " + bjp);
+        System.out.println("CONGRESS Votes: " + cn);
+        System.out.println("NOTA Votes: " + nota);
+
+        sc.close();
+    }
+}

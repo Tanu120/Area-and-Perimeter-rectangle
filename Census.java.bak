@@ -1,0 +1,17 @@
+class Census 
+{
+	public static void main(String[] args) 
+	{
+		Long population2025 = 312032486l;
+		final Long second = (365*24*60*60)*5;
+		Long birth = second/7;
+		Long death = second/13;
+		Long immigrants = second/45;
+		Long population2030 = population2025+birth-death+immigrants;
+		System.out.println("POPULATION IN 2025: "+population2025 );
+		System.out.println("BIRTH RATE : "+birth );
+		System.out.println("DEATH RATE : "+death );
+		System.out.println("IMMIGRANT S RATE : "+immigrants );
+		System.out.println("POPULATION IN 2030: "+population2030 );
+	}
+}

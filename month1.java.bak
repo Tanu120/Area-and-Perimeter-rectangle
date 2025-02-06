@@ -1,0 +1,16 @@
+import java.util.Scanner;
+class  month1
+{
+	public static void main(String[] args) 
+	{
+		System.out.println(" MONTHS ");
+		Scanner sc = new Scanner(System.in);
+		int m = sc.nextInt();
+		int y = m/12;
+		double r = (m%12)/;
+		System.out.println(" MONTHS "+m);
+		String str =  (y+"."+r);
+		float con = float.parseFloat()
+		
+	}
+}

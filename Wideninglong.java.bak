@@ -1,0 +1,24 @@
+class Wideninglong
+{
+	public static void main(String[] args) 
+	{
+		
+		
+		long a = 1234l;
+		System.out.println(c);
+		
+		
+		float d = a;
+		System.out.println(d);
+		
+		
+		double e = a;
+		System.out.println(e);
+		
+		
+		//char f = a;
+		//System.out.println(f);
+		//compile time error
+		
+	}
+}

@@ -1,0 +1,21 @@
+class WideningInt 
+{
+	public static void main(String[] args) 
+	{
+		short c = 128;
+		int d = c;
+		System.out.println(d);
+		//128
+		
+		float e = c;
+		System.out.println(e);
+		//128.0
+		
+		double f = c;
+		System.out.println(f);
+		//128.0
+		
+		
+		
+	}
+}
